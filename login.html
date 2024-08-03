@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(../img/pexels-vlad-alexandru-popa-1402787.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+           
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(102, 99, 99, 0.848);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(37, 238, 10, 0.268);
+        }
+        h2, h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #351606dd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #010b03;
+        }
+        .link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .skip a{
+            text-decoration: none;
+            display: inline;
+            color: white;
+            
+
+        }
+        
+        #login{
+            width:90% ;
+            height: 20px;
+            background-color: #de0f0fe7;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-left: 10px;
+            padding: 10px; 
+        }
+        #login:hover{
+            background-color: green;
+        }
+        
+
+       
+    </style>
+</head>
+<body>
+    <div class="container" id="loginPage">
+        <h2>Login</h2>
+        <form onsubmit="navigateToHome(event)">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="login"></label>
+            <a href="garage.html" id="login">Login</a>
+        </form>
+        <p class="link">Don't have an account? <a href="register.html">Register here</a></p>
+        <button class="skip"><a href="garage.html">skip</a>
+        </button>
+    </div>
+</body>
+</html>
